@@ -77,8 +77,10 @@
     <link rel="stylesheet" href="styles.css" />
 
     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Adamina&family=Neucha&display=swap"
       rel="stylesheet"
     />
 
@@ -113,15 +115,17 @@
     <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-container">
-        <div class="nav-logo">
-          <h1>MyHotSlots</h1>
+        <a href="www.myhotslots.com" class="nav-logo-link"
+          ><div class="nav-logo">
+            <h1>MyHotSlots</h1>
 
-          <img
-            class="nav-logo-icon"
-            src="./assets/myhoticon2.png"
-            alt="hoticon"
-          />
-        </div>
+            <img
+              class="nav-logo-icon"
+              src="./assets/myhoticon2.png"
+              alt="hoticon"
+            /></div
+        ></a>
+
         <div class="nav-links">
           <a href="#casinos">Top Casinos</a>
           <a href="#bonuses">Hot Bonuses</a>
@@ -149,19 +153,30 @@
             </p>
             <div class="hero-features">
               <div class="feature">
-                <span class="feature-icon">⚡</span>
+                <span class="feature-icon"
+                  ><img class="icon1" src="./assets/slot.png" alt="icon slot"
+                /></span>
                 <span>Fast Payouts</span>
               </div>
               <div class="feature">
-                <span class="feature-icon">🛡️</span>
+                <span class="feature-icon"
+                  ><img class="icon1" src="./assets/crown.png" alt="crown icon"
+                /></span>
                 <span>Licensed Only</span>
               </div>
               <div class="feature">
-                <span class="feature-icon">💰</span>
+                <span class="feature-icon"
+                  ><img class="icon1" src="./assets/coin.png" alt="coin icon"
+                /></span>
                 <span>$25 No Deposit</span>
               </div>
               <div class="feature">
-                <span class="feature-icon">🎮</span>
+                <span class="feature-icon"
+                  ><img
+                    class="icon1"
+                    src="./assets/casino-chips.png"
+                    alt="casino chips"
+                /></span>
                 <span>2500+ Games</span>
               </div>
             </div>
@@ -203,24 +218,24 @@
               <div class="bonus">$1,000 + 500 Free Spins</div>
               <div class="wagering">35x Wagering • Interac • 98.64% RTP</div>
             </div>
-            <a href="#review-fanduel" class="btn btn-claim">Claim Bonus</a>
+            <a href="www.greenluck.com" class="btn btn-claim">Claim Bonus</a>
           </div>
 
           <div class="quick-pick-card">
             <div class="casino-img">
               <img
-                src="./assets/casino_brango.webp"
-                style="transform: scale(0.8)"
-                alt="Brango Casino Logo"
+                src="./assets/metal-casino.png"
+                style="transform: scale(0.5)"
+                alt="Metal Casino Logo"
               />
             </div>
             <div class="casino-info">
-              <h3>Brango Casino</h3>
+              <h3>Metal Casino</h3>
               <div class="rating">⭐⭐⭐⭐⭐ 4.9/5</div>
-              <div class="bonus">$1,000 + 500 Free Spins</div>
+              <div class="bonus">$1,500 + 200 Free Spins</div>
               <div class="wagering">1x Wagering • PayPal • 24h Payouts</div>
             </div>
-            <a href="#review-fanduel" class="btn btn-claim">Claim Bonus</a>
+            <a href="www.metalcasino.com" class="btn btn-claim">Claim Bonus</a>
           </div>
 
           <div class="quick-pick-card">
@@ -234,10 +249,10 @@
             <div class="casino-info">
               <h3>Gamblingo Casino</h3>
               <div class="rating">⭐⭐⭐⭐⭐ 4.9/5</div>
-              <div class="bonus">$1,000 + 500 Free Spins</div>
+              <div class="bonus">$1,000 + 100 Free Spins</div>
               <div class="wagering">1x Wagering • PayPal • 24h Payouts</div>
             </div>
-            <a href="#review-fanduel" class="btn btn-claim">Claim Bonus</a>
+            <a href="www.gablingo.com" class="btn btn-claim">Claim Bonus</a>
           </div>
         </div>
       </div>
@@ -246,9 +261,9 @@
     <!-- Hot Bonuses Section -->
     <section class="hot-bonuses" id="bonuses">
       <div class="container">
-        <h2 class="section-title">🔥 Hottest Casino Bonuses Right Now</h2>
+        <h2 class="section-title">Hottest Casino Bonuses Right Now</h2>
         <p class="section-subtitle">
-          Last updated: November 14, 2024 - Verified working codes
+          Last updated: November 14, 2025 Verified working codes
         </p>
 
         <div class="bonus-categories">
@@ -263,9 +278,12 @@
             Free Spins
           </button>
         </div>
-
+        <!-- ss -->
         <div class="bonuses-grid">
           <div class="bonus-card no-deposit" data-category="no-deposit">
+            <div class="xxx">
+              <img class="casino-img2" src="./assets/green-luck.png" alt="" />
+            </div>
             <div class="bonus-badge">No Deposit</div>
             <h3>BetMGM Casino</h3>
             <div class="bonus-amount">$25 FREE</div>
@@ -281,17 +299,22 @@
             <a
               href="#"
               class="btn btn-claim"
-              onclick="claimBonus('BetMGM', 'HOTSLOTS25')"
+              onclick="claimBonus('greenLuck', 'HOTSLOTS25')"
               >Claim $25 FREE</a
             >
             <div class="terms-link">
-              <a href="#" onclick="showTerms('betmgm')">Terms & Conditions</a>
+              <a href="#" onclick="showTerms('greenLuck')"
+                >Terms & Conditions</a
+              >
             </div>
           </div>
 
           <div class="bonus-card welcome" data-category="welcome">
             <div class="bonus-badge">Welcome</div>
-            <h3>FanDuel Casino</h3>
+            <div class="xxx">
+              <img class="casino-img2" src="./assets/boho-casino.png" alt="" />
+            </div>
+            <h3>Boho Casino</h3>
             <div class="bonus-amount">$1,000 + 500 Spins</div>
             <div class="bonus-details">
               <p><strong>Wagering:</strong> 1x (Best Deal!)</p>
@@ -300,20 +323,27 @@
               <p><strong>Valid:</strong> 30 days</p>
             </div>
             <a
-              href="#"
+              href="www.bohocasino.com"
               class="btn btn-claim"
-              onclick="claimBonus('FanDuel', 'WELCOME1000')"
+              onclick="claimBonus('Boho', 'WELCOME1000')"
               >Claim Bonus</a
             >
             <div class="terms-link">
-              <a href="#" onclick="showTerms('fanduel')">Terms & Conditions</a>
+              <a href="#" onclick="showTerms('Boho')">Terms & Conditions</a>
             </div>
           </div>
 
           <div class="bonus-card free-spins" data-category="free-spins">
             <div class="bonus-badge">Free Spins</div>
-            <h3>DraftKings Casino</h3>
-            <div class="bonus-amount">500 Free Spins</div>
+            <div class="xxx">
+              <img
+                class="casino-img2"
+                src="./assets/metal-casino.png"
+                alt="Metal casino logo"
+              />
+            </div>
+            <h3>Metal Casino</h3>
+            <div class="bonus-amount">200 Free Spins</div>
             <div class="bonus-details">
               <p><strong>Wagering:</strong> 15x wins</p>
               <p><strong>Games:</strong> Starburst, Gonzo</p>
@@ -321,88 +351,51 @@
               <p><strong>Valid:</strong> 14 days</p>
             </div>
             <a
-              href="#"
+              href="www.metalcasino.com"
               class="btn btn-claim"
-              onclick="claimBonus('DraftKings', 'SPINS500')"
+              onclick="claimBonus('MetalCasino', 'SPINS500')"
               >Get Free Spins</a
             >
             <div class="terms-link">
-              <a href="#" onclick="showTerms('draftkings')"
+              <a href="#" onclick="showTerms('MetalCasino')"
                 >Terms & Conditions</a
               >
             </div>
           </div>
 
-          <div class="bonus-card welcome" data-category="welcome">
-            <div class="bonus-badge">Welcome</div>
-            <h3>Jackpot City</h3>
-            <div class="bonus-amount">C$1,600 Package</div>
+          <div class="bonus-card free-spins" data-category="free-spins">
+            <div class="bonus-badge">Free Spins</div>
+            <div class="xxx">
+              <img
+                class="casino-img2"
+                src="./assets/gamblingo.png"
+                alt="Metal casino logo"
+              />
+            </div>
+            <h3>Gamblingo Casino</h3>
+            <div class="bonus-amount">100 Free Spins</div>
             <div class="bonus-details">
-              <p><strong>Wagering:</strong> 35x</p>
-              <p><strong>RTP:</strong> 98.64%</p>
-              <p><strong>Payment:</strong> Interac</p>
-              <p><strong>Valid:</strong> 30 days</p>
+              <p><strong>Wagering:</strong> 15x wins</p>
+              <p><strong>Games:</strong> Starburst, Gonzo</p>
+              <p><strong>Valid:</strong> 14 days</p>
             </div>
             <a
-              href="#"
+              href="www.gamblingo.com"
               class="btn btn-claim"
-              onclick="claimBonus('JackpotCity', 'CANADA1600')"
-              >Claim Package</a
+              onclick="claimBonus('Gamblingo', 'SPINS500')"
+              >Get Free Spins</a
             >
             <div class="terms-link">
-              <a href="#" onclick="showTerms('jackpotcity')"
+              <a href="#" onclick="showTerms('Gamblingo')"
                 >Terms & Conditions</a
               >
-            </div>
-          </div>
-
-          <div class="bonus-card no-deposit" data-category="no-deposit">
-            <div class="bonus-badge">No Deposit</div>
-            <h3>Caesars Palace</h3>
-            <div class="bonus-amount">$10 FREE</div>
-            <div class="bonus-details">
-              <p><strong>Wagering:</strong> 1x</p>
-              <p><strong>Max Win:</strong> $500</p>
-              <p>
-                <strong>Code:</strong> <span class="bonus-code">CAESAR10</span>
-              </p>
-              <p><strong>Valid:</strong> 30 days</p>
-            </div>
-            <a
-              href="#"
-              class="btn btn-claim"
-              onclick="claimBonus('Caesars', 'CAESAR10')"
-              >Claim $10 FREE</a
-            >
-            <div class="terms-link">
-              <a href="#" onclick="showTerms('caesars')">Terms & Conditions</a>
-            </div>
-          </div>
-
-          <div class="bonus-card welcome" data-category="welcome">
-            <div class="bonus-badge">Welcome</div>
-            <h3>Betway Casino</h3>
-            <div class="bonus-amount">C$1,800 Bonus</div>
-            <div class="bonus-details">
-              <p><strong>Wagering:</strong> 50x</p>
-              <p><strong>Sports:</strong> Integrated</p>
-              <p><strong>Payment:</strong> Interac, PayPal (ON)</p>
-              <p><strong>Valid:</strong> 30 days</p>
-            </div>
-            <a
-              href="#"
-              class="btn btn-claim"
-              onclick="claimBonus('Betway', 'CANADA1800')"
-              >Claim Bonus</a
-            >
-            <div class="terms-link">
-              <a href="#" onclick="showTerms('betway')">Terms & Conditions</a>
             </div>
           </div>
         </div>
 
         <div class="bonus-calculator">
-          <h3>💰 Bonus Value Calculator</h3>
+          <img src="./assets/money.png" class="icon1" alt="Money icon" />
+          <h3>Bonus Value Calculator</h3>
           <p>
             Find out the real value of any bonus based on wagering requirements
           </p>
@@ -431,18 +424,25 @@
     <!-- Casino Reviews Section -->
     <section class="casino-reviews" id="reviews">
       <div class="container">
-        <h2 class="section-title">🎰 Detailed Casino Reviews</h2>
+        <h2 class="section-title">Detailed Casino Reviews</h2>
         <p class="section-subtitle">
           Expert reviews based on real testing and player feedback
         </p>
 
         <div class="reviews-grid">
           <!-- FanDuel Casino Review -->
-          <div class="review-card" id="review-fanduel">
+          <div class="review-card" id="review-Gamblingo">
             <div class="casino-header">
-              <div class="casino-logo">FD</div>
+              <div class="casino-logo">
+                <img
+                  src="./assets/gamblingo.png"
+                  class="detail-img-caino"
+                  alt="gamblingo logo"
+                  style="transform: scale(1.3)"
+                />
+              </div>
               <div class="casino-title">
-                <h3>FanDuel Casino</h3>
+                <h3>Gamblingo Casino</h3>
                 <div class="rating">⭐⭐⭐⭐⭐ 4.9/5 (2,847 reviews)</div>
               </div>
               <div class="casino-license">
@@ -495,7 +495,7 @@
 
               <div class="review-summary">
                 <p>
-                  <strong>Our Verdict:</strong> FanDuel Casino offers the best
+                  <strong>Our Verdict:</strong> Gamblingo Casino offers the best
                   bonus terms in the industry with just 1x wagering. While the
                   game selection isn't the largest, the quality is high and
                   payouts are lightning-fast. Perfect for players who want to
@@ -516,21 +516,27 @@
 
             <div class="review-footer">
               <a
-                href="#"
+                href="www.Gamblingo.com"
                 class="btn btn-primary"
                 onclick="claimBonus('FanDuel', 'WELCOME1000')"
                 >Claim $1,000 + 500 Spins</a
               >
-              <div class="last-updated">Last tested: November 2024</div>
+              <div class="last-updated">Last tested: November 2025</div>
             </div>
           </div>
 
           <!-- BetMGM Casino Review -->
-          <div class="review-card" id="review-betmgm">
+          <div class="review-card" id="review-greenluck">
             <div class="casino-header">
-              <div class="casino-logo">MGM</div>
+              <div class="casino-logo">
+                <img
+                  src="./assets/green-luck.png"
+                  class="detail-img-caino"
+                  alt="green luck logo"
+                />
+              </div>
               <div class="casino-title">
-                <h3>BetMGM Casino</h3>
+                <h3>Green Luck Casino</h3>
                 <div class="rating">⭐⭐⭐⭐⭐ 4.8/5 (3,921 reviews)</div>
               </div>
               <div class="casino-license">
@@ -574,7 +580,7 @@
                 <div class="cons">
                   <h4>❌ Cons</h4>
                   <ul>
-                    <li>Higher wagering vs FanDuel (15x vs 1x)</li>
+                    <li>Higher wagering vs Green Luck (15x vs 1x)</li>
                     <li>Occasional app crashes reported</li>
                     <li>Some payment methods state-restricted</li>
                     <li>Customer support wait times</li>
@@ -584,11 +590,11 @@
 
               <div class="review-summary">
                 <p>
-                  <strong>Our Verdict:</strong> BetMGM excels in game variety
-                  and rewards integration. The $25 no-deposit bonus is genuine
-                  free money, and the MGM Rewards program adds real value for
-                  Vegas visitors. Best choice for players wanting maximum gaming
-                  options.
+                  <strong>Our Verdict:</strong> Green Luck excels in game
+                  variety and rewards integration. The $25 no-deposit bonus is
+                  genuine free money, and the MGM Rewards program adds real
+                  value for Vegas visitors. Best choice for players wanting
+                  maximum gaming options.
                 </p>
               </div>
 
@@ -605,21 +611,27 @@
 
             <div class="review-footer">
               <a
-                href="#"
+                href="www.greenluckcasino.com"
                 class="btn btn-primary"
-                onclick="claimBonus('BetMGM', 'HOTSLOTS25')"
+                onclick="claimBonus('MetalCasino', 'HOTSLOTS25')"
                 >Claim $25 FREE + $1,000</a
               >
-              <div class="last-updated">Last tested: November 2024</div>
+              <div class="last-updated">Last tested: November 2025</div>
             </div>
           </div>
 
           <!-- Jackpot City Casino Review (Canada) -->
-          <div class="review-card" id="review-jackpotcity">
+          <div class="review-card" id="review-MetalCasino">
             <div class="casino-header">
-              <div class="casino-logo">JC</div>
+              <div class="casino-logo">
+                <img
+                  src="./assets/metal-casino.png"
+                  class="detail-img-caino"
+                  alt="metal casino logo"
+                />
+              </div>
               <div class="casino-title">
-                <h3>Jackpot City Casino</h3>
+                <h3>Metal Casino</h3>
                 <div class="rating">⭐⭐⭐⭐⭐ 4.7/5 (1,643 reviews)</div>
               </div>
               <div class="casino-license">
@@ -673,7 +685,7 @@
 
               <div class="review-summary">
                 <p>
-                  <strong>Our Verdict:</strong> Jackpot City is the gold
+                  <strong>Our Verdict:</strong> Metal Casino is the gold
                   standard for Canadian online casinos. With 25 years of
                   operation and the highest RTP in the industry, it's built for
                   serious players. The Interac integration makes banking
@@ -699,14 +711,17 @@
                 onclick="claimBonus('JackpotCity', 'CANADA1600')"
                 >Claim C$1,600 Package</a
               >
-              <div class="last-updated">Last tested: November 2024</div>
+              <div class="last-updated">Last tested: November 2025</div>
             </div>
           </div>
         </div>
 
         <!-- Comparison Table -->
         <div class="comparison-table-container">
-          <h3>🏆 Quick Comparison Table</h3>
+          <div>
+            <img src="./assets/bar.png" class="icon1" alt="" />
+            <h3>Quick Comparison Table</h3>
+          </div>
           <div class="table-wrapper">
             <table class="comparison-table">
               <thead>
@@ -722,7 +737,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td><strong>FanDuel</strong></td>
+                  <td><strong>Green Luck</strong></td>
                   <td>⭐⭐⭐⭐⭐ 4.9</td>
                   <td>$1,000 + 500 Spins</td>
                   <td>1x</td>
@@ -732,13 +747,13 @@
                     <a
                       href="#"
                       class="btn-small btn-claim"
-                      onclick="claimBonus('FanDuel', 'WELCOME1000')"
+                      onclick="claimBonus('greenLuck', 'WELCOME1000')"
                       >Claim</a
                     >
                   </td>
                 </tr>
                 <tr>
-                  <td><strong>BetMGM</strong></td>
+                  <td><strong>Metal Casino</strong></td>
                   <td>⭐⭐⭐⭐⭐ 4.8</td>
                   <td>$25 Free + $1,000</td>
                   <td>15x</td>
@@ -748,13 +763,13 @@
                     <a
                       href="#"
                       class="btn-small btn-claim"
-                      onclick="claimBonus('BetMGM', 'HOTSLOTS25')"
+                      onclick="claimBonus('Metalcasino', 'HOTSLOTS25')"
                       >Claim</a
                     >
                   </td>
                 </tr>
                 <tr>
-                  <td><strong>Jackpot City</strong></td>
+                  <td><strong>Gamblingo Casino</strong></td>
                   <td>⭐⭐⭐⭐⭐ 4.7</td>
                   <td>C$1,600 Package</td>
                   <td>35x</td>
@@ -764,29 +779,14 @@
                     <a
                       href="#"
                       class="btn-small btn-claim"
-                      onclick="claimBonus('JackpotCity', 'CANADA1600')"
+                      onclick="claimBonus('Gamblingo', 'CANADA1600')"
                       >Claim</a
                     >
                   </td>
                 </tr>
+
                 <tr>
-                  <td><strong>DraftKings</strong></td>
-                  <td>⭐⭐⭐⭐ 4.6</td>
-                  <td>$1,000 LossBack + 500 Spins</td>
-                  <td>15x</td>
-                  <td>2-5 days</td>
-                  <td>Dynasty Rewards</td>
-                  <td>
-                    <a
-                      href="#"
-                      class="btn-small btn-claim"
-                      onclick="claimBonus('DraftKings', 'SPINS500')"
-                      >Claim</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td><strong>Betway</strong></td>
+                  <td><strong>Boho Casino</strong></td>
                   <td>⭐⭐⭐⭐ 4.5</td>
                   <td>C$1,800 Bonus</td>
                   <td>50x</td>
@@ -796,7 +796,7 @@
                     <a
                       href="#"
                       class="btn-small btn-claim"
-                      onclick="claimBonus('Betway', 'CANADA1800')"
+                      onclick="claimBonus('Boho', 'CANADA1800')"
                       >Claim</a
                     >
                   </td>
@@ -811,21 +811,23 @@
     <!-- Top Casinos Section -->
     <section class="top-casinos" id="casinos">
       <div class="container">
-        <h2 class="section-title">🎰 Best Online Casinos by Category</h2>
+        <h2 class="section-title">Best Online Casinos by Category</h2>
 
         <div class="casino-categories">
           <div class="category-card">
             <h3>🇺🇸 Best USA Casinos</h3>
             <p>Legal in 20+ states with fast PayPal payouts</p>
             <ul class="casino-list">
-              <li><span class="rank">#1</span> FanDuel Casino - 1x wagering</li>
               <li>
-                <span class="rank">#2</span> BetMGM Casino - $25 no deposit
+                <span class="rank">#1</span> Green Luck Casino - 1x wagering
               </li>
               <li>
-                <span class="rank">#3</span> DraftKings Casino - Dynasty Rewards
+                <span class="rank">#2</span> Metal Casino - $25 no deposit
               </li>
-              <li><span class="rank">#4</span> Caesars Palace - VIP perks</li>
+              <li>
+                <span class="rank">#3</span> Gamblingo Casino - Dynasty Rewards
+              </li>
+              <li><span class="rank">#4</span> Boho Casino - VIP perks</li>
               <li>
                 <span class="rank">#5</span> Fanatics Casino - FanCash system
               </li>
@@ -878,7 +880,7 @@
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
       <div class="container">
-        <h2 class="section-title">📧 Get in Touch</h2>
+        <h2 class="section-title">Get in Touch</h2>
         <p class="section-subtitle">
           Have questions about casino bonuses or need help choosing the right
           casino?
@@ -976,10 +978,10 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-section">
-            <h3>🎰 MyHotSlots</h3>
+            <h3>MyHotSlots</h3>
             <p>
               Your trusted source for the hottest casino bonuses and reviews for
-              USA & Canada players since 2024.
+              USA & Canada players since 2025.
             </p>
             <div class="footer-stats">
               <div class="footer-stat">
@@ -1076,8 +1078,8 @@
 
           <div class="copyright">
             <p>
-              &copy; 2024 MyHotSlots.com | All rights reserved | Last updated:
-              November 14, 2024
+              &copy; 2025 MyHotSlots.com | All rights reserved | Last updated:
+              November 14, 2025
             </p>
           </div>
         </div>
