@@ -9,12 +9,24 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: "Neucha", cursive;
     line-height: 1.6;
     color: #1a1a1a;
     background: linear-gradient(135deg, #e6dada 0%, #f5f2f2 25%, #d4e4e8 75%, #274046 100%);
     min-height: 100vh;
+}
+
+:root {
+  --primary: #3b82f6;     /* galvenā krāsa */
+  --secondary: #9333ea;   /* papildkrāsa */
+  --text-color: #1f2937;  /* teksta krāsa */
+  --bg-color: #ffffff;    /* fona krāsa */
+  --gradient-btn: linear-gradient(135deg, #ff6b6b, #feca57); /* gradienta poga */
 }
 
 .container {
@@ -54,12 +66,15 @@ p {
     position: fixed;
     top: 0;
     width: 100%;
-    /* background: rgba(39, 64, 70, 0.95); */
     background-color: #ffa500;
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: all 0.3s ease;
     
+}
+
+.nav-logo-link {
+    text-decoration: none;
 }
 
 .nav-container {
@@ -71,6 +86,12 @@ p {
     align-items: center;
     height: 70px;
     
+}
+
+.icon1 {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
 }
 
 .nav-logo {
@@ -106,7 +127,7 @@ p {
 }
 
 .nav-links a:hover {
-    color: #feca57;
+    color: #ff6b6b;
 }
 
 .nav-toggle {
@@ -201,6 +222,8 @@ p {
 
 .feature-icon {
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
 }
 
 .cta-buttons {
@@ -275,7 +298,7 @@ p {
 }
 
 .btn-claim {
-    background: linear-gradient(135deg, #10ac84, #1dd1a1);
+    background: var(--gradient-btn);
     color: #ffffff;
     box-shadow: 0 4px 15px rgba(16, 172, 132, 0.3);
 }
@@ -291,7 +314,7 @@ p {
 }
 
 .btn-calculate {
-    background: linear-gradient(135deg, #3742fa, #5352ed);
+    background: linear-gradient(135deg, #274046, #3d5a61);
     color: #ffffff;
 }
 
@@ -442,7 +465,7 @@ section {
 }
 
 .bonus-card {
-    background: #ffffff;
+    background: #f1f1f1ec;
     border-radius: 15px;
     padding: 1.5rem;
     box-shadow: 0 8px 30px rgba(0,0,0,0.1);
@@ -463,10 +486,24 @@ section {
     background: linear-gradient(135deg, #ff6b6b, #feca57);
     color: #ffffff;
     padding: 5px 15px;
-    border-radius: 15px;
+    border-radius: 10px;
     font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.casino-img2 {
+    width: 50%;
+}
+
+.xxx {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
 .bonus-card h3 {
@@ -585,7 +622,7 @@ section {
 .casino-logo {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #274046, #3d5a61);
+    /* background: linear-gradient(135deg, #274046, #3d5a61); */
     color: #ffffff;
     border-radius: 15px;
     display: flex;
@@ -626,6 +663,13 @@ section {
     background: #f8f9fa;
     padding: 1.5rem;
     border-radius: 10px;
+}
+
+
+.detail-img-caino {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .fact {
