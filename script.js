@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('MyHotSlots loaded successfully!');
 });
 
+
+
+
 // Navigation functionality
 function initNavigation() {
     const navToggle = document.querySelector('.nav-toggle');
@@ -161,10 +164,10 @@ function calculateBonusValue() {
 function claimBonus(casinoName, bonusCode) {
     // In a real implementation, these would be affiliate links
     const casinoUrls = {
-        'FanDuel': 'https://casino.fanduel.com',
+        'GreenLuck': 'https://greenluck.com',
         'BetMGM': 'https://casino.betmgm.com',
         'JackpotCity': 'https://www.jackpotcitycasino.com',
-        'DraftKings': 'https://casino.draftkings.com',
+        'Metal Casino': 'https://metalcasino.com',
         'Caesars': 'https://www.caesarscasino.com',
         'Betway': 'https://casino.betway.com',
         'Tooniebet': 'https://tooniebet.com',
@@ -333,6 +336,9 @@ function closeModal() {
     }
 }
 
+
+
+
 function getModalContent(type) {
     const contents = {
         'terms': `
@@ -352,7 +358,7 @@ function getModalContent(type) {
             <h3>5. Limitation of Liability</h3>
             <p>MyHotSlots is not responsible for any losses incurred from gambling activities. Please gamble responsibly.</p>
             
-            <p><em>Last updated: November 14, 2024</em></p>
+            <p><em>Last updated: November 14, 2025</em></p>
         `,
         'privacy': `
             <h2>Privacy Policy</h2>
@@ -374,7 +380,7 @@ function getModalContent(type) {
             <h3>6. Contact Us</h3>
             <p>For privacy concerns, please contact us through our contact form.</p>
             
-            <p><em>Last updated: November 14, 2024</em></p>
+            <p><em>Last updated: November 14, 2025</em></p>
         `,
         'responsible': `
             <h2>Responsible Gambling</h2>
@@ -469,8 +475,8 @@ function showTerms(casinoName) {
 
 function getCasinoTerms(casinoName) {
     const terms = {
-        'betmgm': `
-            <h2>BetMGM Casino - $25 No Deposit Bonus Terms</h2>
+        'greenLuck': `
+            <h2>Green Luck Casino - $25 No Deposit Bonus Terms</h2>
             <h3>Bonus Details</h3>
             <ul>
                 <li><strong>Bonus Code:</strong> HOTSLOTS25</li>
@@ -497,8 +503,8 @@ function getCasinoTerms(casinoName) {
                 <li>Must verify account before withdrawal</li>
             </ul>
         `,
-        'fanduel': `
-            <h2>FanDuel Casino - Welcome Bonus Terms</h2>
+        'Boho': `
+            <h2>Boho Casino - Welcome Bonus Terms</h2>
             <h3>Bonus Details</h3>
             <ul>
                 <li><strong>Bonus:</strong> 100% Deposit Match up to $1,000 + 500 Free Spins</li>
@@ -523,8 +529,8 @@ function getCasinoTerms(casinoName) {
                 <li>Responsible gambling tools available</li>
             </ul>
         `,
-        'jackpotcity': `
-            <h2>Jackpot City - Welcome Package Terms</h2>
+        'Gamblingo': `
+            <h2>Gamblingo Casino - Welcome Package Terms</h2>
             <h3>Bonus Structure</h3>
             <ul>
                 <li><strong>1st Deposit:</strong> 100% up to C$400</li>
@@ -550,8 +556,8 @@ function getCasinoTerms(casinoName) {
                 <li>Progressive Jackpots: Excluded</li>
             </ul>
         `,
-        'draftkings': `
-            <h2>DraftKings Casino - Bonus Terms</h2>
+        'MetalCasino': `
+            <h2>Metal Casino - Bonus Terms</h2>
             <h3>Welcome Offer</h3>
             <ul>
                 <li><strong>Lossback:</strong> Get up to $1,000 back on losses (first 24 hours)</li>
